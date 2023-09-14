@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'io.redrays.ws.concept'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation 'org.xerial:sqlite-jdbc:3.43.0.0'
+    implementation 'org.postgresql:postgresql:42.6.0'
+    implementation 'org.java-websocket:Java-WebSocket:1.5.4'
+}
+
+test {
+    useJUnitPlatform()
+}
