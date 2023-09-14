@@ -229,7 +229,7 @@ As evident from the class names, if multiple connections are created in parallel
 As shown in the screenshots below, race conditions can occur.
 ![image](https://github.com/vah13/WS_RaceCondition_PoC/assets/7976421/e9f094d5-4981-4159-b5c6-ed789b602b34)
 
-![image](WS_RaceCondition_demo.gif)
+![image](https://github.com/vah13/WS_RaceCondition_PoC/blob/master/WS_RaceCondition_demo.gif)
 
 
 Original demo video here https://redrays.io/wp-content/uploads/2023/09/WS_RaceCondition_demo_video.mp4
