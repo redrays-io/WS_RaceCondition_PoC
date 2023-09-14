@@ -236,3 +236,5 @@ Original demo video here https://redrays.io/wp-content/uploads/2023/09/WS_RaceCo
 ### Are there any race condition vulnerabilities in WebSockets in the wild?
 
 Yes, a few critical race condition vulnerabilities have been detected in some cryptocurrency exchanges using WS API. These issues have been reported, and the exchanges subsequently fixed them.
+
+[@vah_13](https://twitter.com/vah_13)
