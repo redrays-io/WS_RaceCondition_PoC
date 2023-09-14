@@ -53,7 +53,7 @@ public void onMessage(WebSocket conn, String message) {
 }
 
 ```
-There's a global variable "id" initialized to 0. When a client connects to the server and sends a message, it checks if "id == 0", indicating whether this function has already been executed. If not, a simple SQL command is executed to select the count of rows from the "example" table. Then, "id" is incremented by 1, and its value is printed. And in theory, the function should not be executed 2 times. 
+There's a global variable "a" initialized to 0. When a client connects to the server and sends a message, it checks if "id == 0", indicating whether this function has already been executed. If not, a simple SQL command is executed to select the count of rows from the "example" table. Then, "a" is incremented by 1, and its value is printed. And in theory, the function should not be executed 2 times. 
 
 In regards to the client, two types of clients have been created: "WebSocketParallel_Success" 
 ```java
@@ -142,7 +142,7 @@ public class WebSocketParallel_Success {
 
 ```
 
-and "WebSocketParallel_Failed"
+and "WebSocketParallel_Failed".
 
 ```java
 package io.redrays.ws.concept.client;
@@ -222,7 +222,7 @@ public class WebSocketParallel_Failed {
 
 ```
 
-. Attempts have been made to create a race condition using two different methods. In the first file, multiple connections are created in parallel, and data is sent to the server, while in the second file, only one connection is established, but data is sent one after the other. 
+Attempts have been made to create a race condition using two different methods. In the first file, multiple connections are created in parallel, and data is sent to the server, while in the second file, only one connection is established, but data is sent one after the other in serial. 
 
 As evident from the class names, if multiple connections are created in parallel and data is sent, the race condition will occur. However, it won't occur in the second case since WebSockets transmit data sequentially in a single connection.
 
