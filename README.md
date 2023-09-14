@@ -13,7 +13,7 @@ Race conditions, also referred to as state races, are errors that occur in multi
 
 While there are numerous resources available about classic race conditions on the internet, this article explores whether race conditions can occur in WebSockets.
 
-### WebSockets: Real-Time Bidirectional Connections
+### WebSockets
 
 WebSockets are a cutting-edge technology that significantly improves interaction in web applications by providing an open bidirectional connection between a user's web browser and a web server. This seamless connection enables data exchange without the need for constantly initiating new HTTP requests, making them ideal for creating interactive applications.
 
