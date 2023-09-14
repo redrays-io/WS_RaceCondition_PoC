@@ -4,7 +4,7 @@ In the field of information technology, ensuring data reliability and integrity 
 
 ### What are race conditions?
 
-Race conditions, also referred to as state races, are errors that occur in multitasking programs when two or more threads or processes attempt to modify shared data or resources simultaneously without synchronization. This can result in unexpected and unpredictable outcomes since the order of execution of operations depends on which threads or processes finish first. Detecting race conditions is a challenging issue in software systems due to their unpredictable nature.
+Race conditions are errors that occur in multitasking programs when two or more threads or processes attempt to modify shared data or resources simultaneously without synchronization. This can result in unexpected and unpredictable outcomes since the order of execution of operations depends on which threads or processes finish first. Detecting race conditions is a challenging issue in software systems due to their unpredictable nature.
 
 ### Sources and Further Reading:
 
