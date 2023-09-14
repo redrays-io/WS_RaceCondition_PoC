@@ -36,11 +36,11 @@ public class EchoWebSocketServer extends WebSocketServer {
         System.out.println("Client disconnected: " + conn.getRemoteSocketAddress() + " Reason: " + reason);
     }
 
-    public static int a = 0;
+    public static int id = 0;
 
     @Override
     public void onMessage(WebSocket conn, String message) {
-        if (a == 0) {
+        if (id == 0) {
             try {
                 // some activity with db
                 int rowCount = getCountFromExampleTable();
@@ -48,8 +48,8 @@ public class EchoWebSocketServer extends WebSocketServer {
                 System.out.println("Error executing query: " + e.getMessage());
             }
             conn.send("Echo: " + message);
-            a = a + 1;
-            System.out.println(a);
+            id = id + 1;
+            System.out.println(id);
         }
     }
 
