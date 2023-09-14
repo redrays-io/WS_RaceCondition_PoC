@@ -13,7 +13,7 @@ public class WebSocketParallel_Failed {
 
     public static void main(String[] args) {
         String serverUri = "ws://127.0.0.1:8080"; // WebSocket server URI
-        int numParallelRequests = 285; // Number of parallel WebSocket requests
+        int numParallelRequests = 100; // Number of parallel WebSocket requests
 
         try {
             WebSocketClient webSocketClient = new WebSocketClient(new URI(serverUri)) {
